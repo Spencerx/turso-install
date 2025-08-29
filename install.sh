@@ -122,7 +122,7 @@ update_profile() {
 }
 
 install_turso_cli() {
-  URL_PREFIX="https://github.com/chiselstrike/homebrew-tap/releases/latest/download/"
+  URL_PREFIX="https://github.com/tursodatabase/homebrew-tap/releases/latest/download/"
   TARGET="${OS}_$ARCH"
 
   printf "${bright_blue}Downloading ${reset}$TARGET ...\n"
