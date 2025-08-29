@@ -107,7 +107,7 @@ detect_profile() {
 
 update_profile() {
    PROFILE_FILE=$(detect_profile)
-   if [[ -n "$PROFILE_FILE" ]]; then
+   if [ -n "$PROFILE_FILE" ]; then
      if ! grep -q "\.turso" $PROFILE_FILE; then
         printf "\n${bright_blue}Updating profile ${reset}$PROFILE_FILE\n"
         printf "\n# Turso\nexport PATH=\"\$PATH:$INSTALL_DIRECTORY\"\n" >> $PROFILE_FILE
